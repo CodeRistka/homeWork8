@@ -6,9 +6,9 @@ import java.io.Serializable;
 
         private static final long serialVersionUID = 1L;
 
-        String name;
-        int age;
-        int averRating;
+        private String name;
+        private int age;
+        private int averRating;
 
         public Student(String name, int age, int averRating) {
             this.name = name;
