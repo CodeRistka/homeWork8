@@ -23,19 +23,19 @@ public class Group implements Serializable {
         group = c;
     }
 
-    public void deleteStudent(String name) throws Exception {
+  public void deleteStudent(String name) throws Exception {
        try{
            for (int j = 0; j < group.length; j++) {
                if (group[j] != null && (group[j].getName().equals(name))) {
                    group[j] = null;
+                   System.out.println("Student " + name + " removed");
                    break;
                }
            }
        }catch (Exception e){
            System.out.println("error");
        }
-        System.out.println("Student " + name + " removed");
-    }
+}
 
 
     public void printInfo() {
